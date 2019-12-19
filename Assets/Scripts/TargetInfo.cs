@@ -13,6 +13,8 @@ public class TargetInfo : MonoBehaviour
     public EasyTween infoButtonAnimation;
     public List<InfoPair> infoPairs;
 
+    private InfoPair activeInfo;
+
     void Start()
     {
         for (int i = 0; i < infoPairs.Count; i++)
@@ -23,6 +25,7 @@ public class TargetInfo : MonoBehaviour
         }
 
         infoButtonAnimation.gameObject.SetActive(false);
+        //SetInfo(0);
     }
 
     public void ShowHint(bool value)
@@ -42,8 +45,9 @@ public class TargetInfo : MonoBehaviour
 
     private void SetInfo(int index)
     {
-        infoTitleText.text = infoPairs[index].infoTitle;
-        infoMessageText.text = infoPairs[index].infoMessage;
+        activeInfo = infoPairs[index];
+        infoTitleText.text = activeInfo.infoTitle;
+        infoMessageText.text = activeInfo.infoMessage;
         infoButtonAnimation.gameObject.SetActive(true);
     }
 
@@ -53,6 +57,12 @@ public class TargetInfo : MonoBehaviour
         action();
     }
 
+    public void GoToExternalSource()
+    {
+        if (activeInfo != null)
+            Application.OpenURL(activeInfo.link);
+    }
+
 
     [Serializable]
     public class InfoPair
@@ -60,5 +70,6 @@ public class TargetInfo : MonoBehaviour
         public ImageTargetExtended target;
         public string infoTitle;
         public string infoMessage;
+        public string link;
     }
 }
