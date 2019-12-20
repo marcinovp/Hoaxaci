@@ -69,6 +69,7 @@ public class TargetInfo : MonoBehaviour
     {
         public ImageTargetExtended target;
         public string infoTitle;
+        [TextArea(5, 20)]
         public string infoMessage;
         public string link;
     }

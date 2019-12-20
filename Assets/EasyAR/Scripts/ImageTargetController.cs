@@ -184,7 +184,7 @@ public class ImageTargetController : MonoBehaviour
 
     public void OnTracking(Matrix4x4 pose)
     {
-        Debug.Log("[EasyAR] OnTracking targtet name: " + target.name());
+        //Debug.Log("[EasyAR] OnTracking targtet name: " + target.name());
         Utility.SetMatrixOnTransform(transform, pose);
         if (xFlip)
         {
