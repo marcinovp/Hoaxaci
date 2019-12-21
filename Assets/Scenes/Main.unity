@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.608393, g: 0.608393, b: 0.608393, a: 1}
+  m_AmbientSkyColor: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1.44
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: ab66b08b55bdeaf4986beb92bc73ca78, type: 3}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44350094, g: 0.46895885, b: 0.52342427, a: 1}
+  m_IndirectSpecularColor: {r: 0.44380555, g: 0.46883368, b: 0.5254135, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -72,7 +72,7 @@ LightmapSettings:
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 0
     m_MixedBakeMode: 1
-    m_BakeBackend: 1
+    m_BakeBackend: 2
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 256
@@ -96,7 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
-  m_LightingDataAsset: {fileID: 112000000, guid: 606aa1e115e987e44be465cfedcaa804,
+  m_LightingDataAsset: {fileID: 112000000, guid: 713f51f94f8a64149babd29fb5d2512c,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -540,6 +540,11 @@ PrefabInstance:
       propertyPath: objParent
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7237484300833524558, guid: 715533df3a25e6c46b570ca34795b10e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.710526
+      objectReference: {fileID: 0}
     - target: {fileID: 8157071640774915171, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -549,11 +554,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7237484300833524558, guid: 715533df3a25e6c46b570ca34795b10e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.710526
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 715533df3a25e6c46b570ca34795b10e, type: 3}
@@ -586,16 +586,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ImageTarget 7 kostol mesita
-      objectReference: {fileID: 0}
-    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bbbe9d9b93eb5b14284aea4fb0073c34, type: 2}
-    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1715110821759773916, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
@@ -692,6 +682,11 @@ PrefabInstance:
       propertyPath: TargetPath
       value: 7-kostol-okno3.jpg
       objectReference: {fileID: 0}
+    - target: {fileID: 7237484300833524558, guid: 715533df3a25e6c46b570ca34795b10e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3094661
+      objectReference: {fileID: 0}
     - target: {fileID: 8157071640774915171, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -700,12 +695,17 @@ PrefabInstance:
     - target: {fileID: 8157071640774915171, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7237484300833524558, guid: 715533df3a25e6c46b570ca34795b10e,
+    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.3094661
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bbbe9d9b93eb5b14284aea4fb0073c34, type: 2}
+    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 715533df3a25e6c46b570ca34795b10e, type: 3}
@@ -1259,16 +1259,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ImageTarget 9 trestny zakon
       objectReference: {fileID: 0}
-    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7d3f9c8914f36e74aa0de1effe6fae3d, type: 2}
-    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1715110821759773916, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1370,6 +1360,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 15ca3513168a08f41bd3677d664aaf1d, type: 2}
     - target: {fileID: 8157071640774915171, guid: 715533df3a25e6c46b570ca34795b10e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7d3f9c8914f36e74aa0de1effe6fae3d, type: 2}
+    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2307,11 +2307,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ImageTarget 3 studna loch ness
       objectReference: {fileID: 0}
-    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6774323314756872848, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2368,6 +2363,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 8f092d2416829f5498c221f88a57c584, type: 2}
     - target: {fileID: 8157071640774915171, guid: 715533df3a25e6c46b570ca34795b10e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -3584,21 +3584,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ImageTarget 4 vodnik lietadla
       objectReference: {fileID: 0}
-    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 65b0cec03856cbc439a8261b484029ee, type: 2}
-    - target: {fileID: 1715110821759773916, guid: 715533df3a25e6c46b570ca34795b10e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.251024
-      objectReference: {fileID: 0}
     - target: {fileID: 1715110821759773916, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3608,6 +3593,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715110821759773916, guid: 715533df3a25e6c46b570ca34795b10e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.251024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715110821759773916, guid: 715533df3a25e6c46b570ca34795b10e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.251024
       objectReference: {fileID: 0}
     - target: {fileID: 6774323314756872848, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
@@ -3679,6 +3674,11 @@ PrefabInstance:
       propertyPath: TargetPath
       value: 4-vodnik5.png
       objectReference: {fileID: 0}
+    - target: {fileID: 7237484300833524558, guid: 715533df3a25e6c46b570ca34795b10e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66858
+      objectReference: {fileID: 0}
     - target: {fileID: 8157071640774915171, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3689,11 +3689,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7237484300833524558, guid: 715533df3a25e6c46b570ca34795b10e,
+    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.66858
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65b0cec03856cbc439a8261b484029ee, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 715533df3a25e6c46b570ca34795b10e, type: 3}
 --- !u!114 &1814851668 stripped
@@ -3719,11 +3724,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ImageTarget 9 trestny zakon 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1715110821759773916, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
@@ -3820,6 +3820,11 @@ PrefabInstance:
       propertyPath: TargetPath
       value: 9-bonus-trestny-zakon1.png
       objectReference: {fileID: 0}
+    - target: {fileID: 7237484300833524558, guid: 715533df3a25e6c46b570ca34795b10e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6239
+      objectReference: {fileID: 0}
     - target: {fileID: 8157071640774915171, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3830,10 +3835,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7237484300833524558, guid: 715533df3a25e6c46b570ca34795b10e,
+    - target: {fileID: 5417748990045732405, guid: 715533df3a25e6c46b570ca34795b10e,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.6239
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 715533df3a25e6c46b570ca34795b10e, type: 3}
@@ -4196,6 +4201,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 15.976028
+      objectReference: {fileID: 0}
+    - target: {fileID: 887733008985531687, guid: 835e1fbd830210a4392f544f5f74c5e8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0054
+      objectReference: {fileID: 0}
+    - target: {fileID: 887733008985531687, guid: 835e1fbd830210a4392f544f5f74c5e8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1332
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 835e1fbd830210a4392f544f5f74c5e8, type: 3}
@@ -4604,12 +4619,12 @@ PrefabInstance:
     - target: {fileID: 3087222146661179024, guid: edd49d150d90cfd4f95ce3a1342cbd9b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.242
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 3087222146661179024, guid: edd49d150d90cfd4f95ce3a1342cbd9b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.526
       objectReference: {fileID: 0}
     - target: {fileID: 3087222146661179024, guid: edd49d150d90cfd4f95ce3a1342cbd9b,
         type: 3}
@@ -4665,21 +4680,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7364925503403989313, guid: edd49d150d90cfd4f95ce3a1342cbd9b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -118.673
-      objectReference: {fileID: 0}
-    - target: {fileID: 7364925503403989313, guid: edd49d150d90cfd4f95ce3a1342cbd9b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90.243996
-      objectReference: {fileID: 0}
-    - target: {fileID: 7364925503403989313, guid: edd49d150d90cfd4f95ce3a1342cbd9b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 89.99999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edd49d150d90cfd4f95ce3a1342cbd9b, type: 3}
