@@ -20,8 +20,11 @@ public class Hints : MonoBehaviour
         for (int i = 0; i < hintPairs.Count; i++)
         {
             int index = i;
-            hintPairs[i].target.TargetFound += (x) => Target_TargetFound(index);
-            hintPairs[i].target.TargetLost += (x) => Target_TargetLost(index);
+            foreach (var target in hintPairs[i].targets)
+            {
+                target.TargetFound += (x) => Target_TargetFound(index);
+                target.TargetLost += (x) => Target_TargetLost(index);
+            }
         }
 
         currentHintIndex = 0;
@@ -96,6 +99,6 @@ public class Hints : MonoBehaviour
 [System.Serializable]
 public class HintPair
 {
-    public ImageTargetExtended target;
+    public ImageTargetExtended[] targets;
     public Sprite hintImage;
 }
