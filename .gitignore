@@ -39,3 +39,11 @@ sysinfo.txt
 *.unitypackage
 
 # End of https://www.gitignore.io/api/unity
+/Assets/Animations/Vajicka.controller.meta
+/Assets/Animations/Vajicka.controller
+/Assets/Meshes/vajicko.FBX.meta
+/Assets/Meshes/vajicko.FBX
+/Assets/Prefabs/vajicko.prefab.meta
+/Assets/Prefabs/vajicko.prefab
+/Assets/Textures/Vajicka
+/Assets/Textures/Vajicka.meta
